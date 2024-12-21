@@ -1,0 +1,61 @@
+graphs = {
+    '1': {
+        'A': [('C', 2), ('D', 3)],
+        'B': [('D', 2), ('E', 4)],
+        'C': [('G', 4)],
+        'D': [('G', 4)],
+        'E': [],
+        'F': [('G', 6)],
+        'G': [],
+        'S': [('A', 2), ('B', 1), ('F', 3)]
+    },
+    '2': {
+        'a': [('b', 1), ('c', 1)],
+        'b': [('a', 1), ('d', 1)],
+        'c': [('a', 1), ('k', 1)],
+        'd': [('b', 1), ('e', 1), ('m', 1)],
+        'e': [('d', 1), ('n', 1)],
+        'f': [('p', 1), ('s', 1)],
+        'g': [('m', 1), ('t', 1)],
+        'h': [('k', 1), ('s', 1)],
+        'k': [('c', 1), ('h', 1)],
+        'm': [('d', 1), ('g', 1), ('n', 1)],
+        'n': [('e', 1), ('m', 1)],
+        'p': [('f', 1), ('q', 1)],
+        'q': [('p', 1), ('r', 1)],
+        'r': [('q', 1), ('t', 1)],
+        's': [('f', 1), ('h', 1)],
+        't': [('g', 1), ('r', 1)]
+    },
+    '3': {
+        'A': [('B', 1), ('C', 4)],
+        'B': [('A', 1), ('C', 1), ('D', 5)],
+        'C': [('A', 4), ('B', 1), ('D', 3)],
+        'D': [('B', 5), ('C', 3), ('E', 8), ('F', 3), ('G', 9)],
+        'E': [('D', 8), ('G', 2)],
+        'F': [('D', 3), ('G', 5)],
+        'G': [('D', 9), ('E', 2), ('F', 5)]
+    },
+    '4': {
+        'Arad': [('Zerind', 75), ('Timisoara', 118), ('Sibiu', 140)],
+        'Bucharest': [('Urziceni', 85), ('Pitesti', 101), ('Giurgiu', 90), ('Fagaras', 211)],
+        'Craiova': [('Dobreta', 120), ('Rimnicu Vilcea', 146), ('Pitesti', 138)],
+        'Dobreta': [('Mehadia', 75), ('Craiova', 120)],
+        'Eforie': [('Hirsova', 86)],
+        'Fagaras': [('Sibiu', 99), ('Bucharest', 211)],
+        'Giurgiu': [('Bucharest', 90)],
+        'Hirsova': [('Eforie', 86), ('Urziceni', 98)],
+        'Lasi': [('Neamt', 87), ('Vaslui', 92)],
+        'Lugoj': [('Timisoara', 111), ('Mehadia', 70)],
+        'Mehadia': [('Dobreta', 75), ('Lugoj', 70)],
+        'Neamt': [('Iasi', 87)],
+        'Oradea': [('Zerind', 71), ('Sibiu', 151)],
+        'Pitesti': [('Rimnicu Vilcea', 97), ('Bucharest', 101), ('Craiova', 138)],
+        'Rimnicu Vilcea': [('Sibiu', 80), ('Pitesti', 97), ('Craiova', 146)],
+        'Sibiu': [('Arad', 140), ('Oradea', 151), ('Rimnicu Vilcea', 80), ('Fagaras', 99)],
+        'Timisoara': [('Arad', 118), ('Lugoj', 111)],
+        'Urziceni': [('Bucharest', 85), ('Hirsova', 98), ('Vaslui', 142)],
+        'Vaslui': [('Iasi', 92), ('Urziceni', 142)],
+        'Zerind': [('Arad', 75), ('Oradea', 71)]
+    }
+}

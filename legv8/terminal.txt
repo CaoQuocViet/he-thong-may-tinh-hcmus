@@ -1,0 +1,53 @@
+sudo apt install gcc-aarch64-linux-gnu
+sudo apt install qemu-system-arm qemu-user qemu-user-static
+qemu-system-aarch64 --version
+qemu-aarch64 --version
+
+aarch64-linux-gnu-as bai_tap_1.asm -o bai_tap_1.o
+aarch64-linux-gnu-gcc bai_tap_1.o -o bai_tap_1.elf -lc -static
+qemu-aarch64 ./bai_tap_1.elf
+
+aarch64-linux-gnu-as bai_tap_2.asm -o bai_tap_2.o
+aarch64-linux-gnu-gcc bai_tap_2.o -o bai_tap_2.elf -lc -static
+qemu-aarch64 ./bai_tap_2.elf
+
+aarch64-linux-gnu-as bai_tap_3.asm -o bai_tap_3.o
+aarch64-linux-gnu-gcc bai_tap_3.o -o bai_tap_3.elf -lc -static
+qemu-aarch64 ./bai_tap_3.elf
+
+aarch64-linux-gnu-as bai_tap_4.asm -o bai_tap_4.o
+aarch64-linux-gnu-gcc bai_tap_4.o -o bai_tap_4.elf -lc -static
+qemu-aarch64 ./bai_tap_4.elf
+
+aarch64-linux-gnu-as bai_tap_5.asm -o bai_tap_5.o
+aarch64-linux-gnu-gcc bai_tap_5.o -o bai_tap_5.elf -lc -static
+qemu-aarch64 ./bai_tap_5.elf
+
+aarch64-linux-gnu-as hello.asm -o hello.o
+aarch64-linux-gnu-gcc hello.o -o hello.elf -lc -static
+qemu-aarch64 ./hello.elf
+
+aarch64-linux-gnu-as xuatthongtin.asm -o xuatthongtin.o
+aarch64-linux-gnu-gcc xuatthongtin.o -o xuatthongtin.elf -lc -static
+qemu-aarch64 ./xuatthongtin.elf
+
+
+aarch64-linux-gnu-as tinhtoan.asm -o tinhtoan.o
+aarch64-linux-gnu-gcc tinhtoan.o -o tinhtoan.elf -lc -static
+qemu-aarch64 ./tinhtoan.elf
+
+aarch64-linux-gnu-as loop.asm -o loop.o
+aarch64-linux-gnu-gcc loop.o -o loop.elf -lc -static
+qemu-aarch64 ./loop.elf
+
+aarch64-linux-gnu-as mangmotchieu.asm -o mangmotchieu.o
+aarch64-linux-gnu-gcc mangmotchieu.o -o mangmotchieu.elf -lc -static
+qemu-aarch64 ./mangmotchieu.elf
+
+aarch64-linux-gnu-as sochinhphuong.asm -o sochinhphuong.o
+aarch64-linux-gnu-gcc sochinhphuong.o -o sochinhphuong.elf -lc -static
+qemu-aarch64 ./sochinhphuong.elf
+
+aarch64-linux-gnu-as congtrunhanchia.asm -o congtrunhanchia.o
+aarch64-linux-gnu-gcc congtrunhanchia.o -o congtrunhanchia.elf -lc -static
+qemu-aarch64 ./congtrunhanchia.elf
